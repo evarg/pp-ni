@@ -499,33 +499,47 @@
 				\item Nasze możliwości tworzenia równań wzrosną, gdy użyjemy pakietów \emph{amssymb} i \emph{amsmath} opracowanym przez Amerykańskie Stowarzyszenie 							Matematyków (AMS) 
 			\end{itemize}
 
-			\item 
+			\item Rozmieszczanie równań
 			\begin{itemize}
-				\item 
+				\item \textbackslash begin\{split\} - formatowanie jak w tabeli
+				\item \textbackslash begin\{multiline\} - wyśrodkowane linijkami
+				\item \textbackslash begin\{gather\} - wyśrodkowane w kolumnach
+				\item \textbackslash begin\{align\} - do lewej
 			\end{itemize}
 
-			\item 
+			\item Warunki
 			\begin{itemize}
-				\item 
+				\item \textbackslash begin\{cases\} - formatowanie jak w tabeli
 			\end{itemize}
 
-			\item 
+			\item Macierze
 			\begin{itemize}
-				\item 
+				\item \textbackslash begin\{matrix\} - formatowanie jak w tabeli, bez nawiasów
+				\item \textbackslash begin\{pmatrix\} - formatowanie jak w tabeli, nawiasy okrągłe
+				\item \textbackslash begin\{vmatrix\} - formatowanie jak w tabeli, nawiasy proste
+				\item \textbackslash begin\{Vmatrix\} - formatowanie jak w tabeli, nawiasy proste podwójne
+				\item \textbackslash begin\{bmatrix\} - formatowanie jak w tabeli, nawiasy kwadratowe
+			\end{itemize}
+
+			\item Macierze - środowisko array
+			\begin{itemize}
+				\item \textbackslash begin\{array\}{cc} - formatowanie jak w tabeli, nawiasy okrągłe
+			\end{itemize}
+
+			\item BIBLIOGRAFIA
+			\begin{itemize}
+				\item LaTeX wspomaga tworzenie bibliografii, zarządzanie nią i tworzenie odnośników
+				\item Przy pierwszej kompilacji dokumentu tworzony jest pliku pomocniczy aux
+				\item Dopiero przy drugiej kompilacji odnośniki będą poprawne
+				\item W najprostszym przypadku umieszczamy w dokumencie środowisko thebibliography
+				\item Poszczególne pozycje są umieszczane w poleceniu \textbackslash bibitem
+				\item Cytowanie w tekście poprzez \textbackslash cite
+				\item Do zarządzania cytowaniami można wykorzystać narzędzie BibTeX lub BibLaTeX
+				\item Spis literatury jest wtedy przechowywany w osobnym pliku
+				\item Do dokumentu trafi lista tylko wykorzystanych pozycji
 			\end{itemize}
 
 		\end{enumerate}
-
-odstęp \hspace{1cm} poziomy \\*
-odstęp \hspace{ \stretch{1} } poziomy \\*
-odstęp \hfill poziomy \\*
-odstęp \vspace{1cm} pionowy \\*
-
-
-
-	\begin{equation}
-		x^{n + 2} = \frac{y_{i}}{\sqrt[3]{2 + z_{j}}}
-	\end{equation}
 
 
 	\begin{figure}[h]
@@ -533,31 +547,5 @@ odstęp \vspace{1cm} pionowy \\*
 		\includegraphics[width=0.5\textwidth]{picture1.jpg}
 		\caption{Basic principle of tomography.}
 	\end{figure}
-
-\begin{tabularx}{\textwidth}{ || X | c | l || }
-	\hline
-	Name                                     & Source of data                 & Abbreviation \\
-	\hline \hline
-	Atom probe tomography                    & Atom probe                     & APT          \\
-	\hline
-	Computed Tomography Imaging Spectrometer & Visible light spectral imaging & CTIS         \\
-	\hline
-\end{tabularx}
-
-\section{Description}
-	In \sf{SSSSSRRRR} \large{SSSSSRRRR} medical X-ray \emph{tomography}, clinical staff make a \textbf{sectional}
-	image through a body by moving an X-ray source and the film in opposite
-	directions during the exposure. \sf{Consequently, structures} in the focal plane
-	appear sharper, while structures in other planes appear blurred (MeSH).
-	By modifying the direction and extent of the movement, operators can select
-	different focal planes which contain the structures of interest. Before the
-	advent of more modern computer-assisted techniques, this technique,
-	developed in the 1930s by the radiologist Alessandro Vallebona, proved
-	useful in reducing the problem \texttt{of superimposition of} structures in
-	projectional (shadow) radiography.
-
-	In a 1953 article in the medical journal Chest, B. Pollak of the Fort
-	William Sanatorium described the use of planography, another term for
-	\emph{tomography} (Pollak).
 
 \end{document}
